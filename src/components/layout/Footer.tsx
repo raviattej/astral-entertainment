@@ -92,25 +92,25 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-gold mt-1 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  Sydney, Australia
+                  2/3 Page St Kunda Park QLD 4556
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={18} className="text-gold mt-1 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  +61 2 1234 5678
+                  +61 7 3472 6473
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={18} className="text-gold mt-1 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  info@astralentertainment.com.au
+                  info@astral.net.au
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={18} className="text-gold mt-1 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
-                  Mon - Sat: 9:00 AM - 6:00 PM
+                  Mon - Fri: 9:00 AM - 6:00 PM
                 </span>
               </li>
             </ul>

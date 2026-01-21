@@ -20,19 +20,19 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visit Us",
-    content: "Sydney, Australia",
+    content: "2/3 Page St Kunda Park QLD 4556",
     subtitle: "Head Office",
   },
   {
     icon: Phone,
     title: "Call Us",
-    content: "+61 2 1234 5678",
+    content: "+61 7 3472 6473",
     subtitle: "Mon - Sat, 9AM - 6PM",
   },
   {
     icon: Mail,
     title: "Email Us",
-    content: "info@astralentertainment.com.au",
+    content: "info@astral.net.au",
     subtitle: "We reply within 24 hours",
   },
   {
@@ -341,7 +341,7 @@ const Contact = () => {
                 </p>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   For urgent matters, please call us directly at{" "}
-                  <span className="text-gold">+61 2 1234 5678</span>.
+                  <span className="text-gold">+61 7 3472 6473</span>.
                 </p>
               </div>
 
