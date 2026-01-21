@@ -27,7 +27,7 @@ const contactInfo = [
     icon: Phone,
     title: "Call Us",
     content: "+61 7 3472 6473",
-    subtitle: "Mon - Sat, 9AM - 6PM",
+    subtitle: "Mon - Fri, 9AM - 6PM",
   },
   {
     icon: Mail,
@@ -38,7 +38,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Working Hours",
-    content: "Mon - Sat: 9:00 AM - 6:00 PM",
+    content: "Mon - Fri: 9:00 AM - 6:00 PM",
     subtitle: "24/7 for urgent requests",
   },
 ];
