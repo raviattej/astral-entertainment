@@ -9,7 +9,6 @@ import {
   Clock,
   CheckCircle,
   ArrowRight,
-  ExternalLink,
   Star,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -76,111 +75,89 @@ const stats = [
   { value: "50+", label: "Team Members" },
 ];
 
-/** Ticketek — Sunil Grover show (direct link; avoids Google redirect wrapper). */
-const BOOK_NOW_TICKETEK_URL =
-  "https://premier.ticketek.com.au/Shows/Show.aspx?sh=SUNILGR26";
-
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
 
-      {/* Hero Section — copy left, Sunil promo image right */}
-      {/* <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-b from-background via-muted/25 to-background"> */}
-      <section className="relative py-24 md:py-32 flex items-center overflow-hidden bg-gradient-to-b from-background via-muted/25 to-background">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_60%_at_70%_20%,hsl(var(--gold)_/_0.08),transparent_55%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_10%_80%,hsl(var(--gold)_/_0.06),transparent_50%)]" />
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 blur-lg">
+          <motion.img
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            // src={heroEvents}
+            src={"/assets/images/sunil-dark.webp"}
+            alt="Elegant event venue"
+            className="w-full h-full object-cover bg-transparent"
+          />
+        </div>
+        <div className="absolute inset-0">
+          <motion.img
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            // src={heroEvents}
+            src={"/assets/images/sunil-dark.webp"}
+            alt="Elegant event venue"
+            className="w-full h-full object-cover sm:object-contain bg-transparent"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-transparent" />
+          {/* <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-background/80" /> */}
+        </div>
 
-        <div className="container-custom relative z-10 w-full pt-24 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24">
-          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-5 lg:gap-10 xl:gap-14">
-            
+        {/* Hero Content */}
+        <div className="container-custom relative z-10 pt-20">
+          <div className="max-w-4xl mx-auto text-center">
             <motion.div
-              initial={{ opacity: 0, scale: 0.98, y: 16 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.85, delay: 0.25, ease: "easeOut" }}
-              className="relative w-full lg:col-span-3"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-gold/50 bg-muted/30 shadow-[0_0_40px_0_rgba(217,165,32,0.6)]">
-                <img
-                  src="/assets/images/sunil-sm.webp"
-                  alt="Sunil Grover — promotional artwork for the live Australia tour"
-                  className="h-full w-full object-cover object-top"
-                />
-                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-background/10" />
-              </div>
-              <div
-                className="pointer-events-none absolute -inset-px -z-10 rounded-[1rem] bg-gradient-to-br from-gold/25 via-transparent to-gold/10 blur-sm"
-                aria-hidden
-              />
+              <span className="inline-block text-gold text-sm font-semibold tracking-widest uppercase mb-6">
+                Welcome to Astral Entertainment
+              </span>
             </motion.div>
 
-            <div className="text-left lg:col-span-2">
-              <motion.div
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.1 }}
-              >
-                <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-widest text-gold">
-                  Astral Entertainment · Live on Tour
-                </span>
-              </motion.div>
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-foreground mb-6 leading-tight"
+            >
+              Where Vision Meets{" "}
+              <span className="text-gradient-gold">Perfection</span>
+            </motion.h1>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.2 }}
-                className="mb-5 font-heading text-4xl font-bold leading-[1.1] text-foreground sm:text-5xl"
-              >
-                Sunil Grover{" "} <br />
-                <span className="text-gradient-gold">Live in Australia</span>
-              </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="text-base sm:text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
+            >
+              Australia's premier destination for exceptional event management
+              and professional cleaning services. We transform spaces and create
+              unforgettable experiences.
+            </motion.p>
 
-              <motion.p
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.35 }}
-                className="mb-4 text-sm leading-relaxed text-muted-foreground sm:text-base"
-              >
-                A night of sharp wit, unforgettable characters, and world-class
-                entertainment—presented by Astral Entertainment. Reserve your
-                seats before they sell out.
-              </motion.p>
-
-              <motion.p
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.45 }}
-                className="mb-10 text-sm text-muted-foreground/90 sm:text-base hidden sm:block"
-              >
-                Australia’s trusted partner for standout events and pristine
-                venues—now bringing this headline show to you.
-              </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.55 }}
-                className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center"
-              >
-                <Button asChild variant="hero" className="px-10">
-                  <a
-                    href={BOOK_NOW_TICKETEK_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Book Now
-                    <ExternalLink className="h-5 w-5" />
-                  </a>
-                </Button>
-                {/* <Button asChild variant="heroOutline">
-                  <Link to="/services">
-                    Explore Services
-                    <ArrowRight className="h-5 w-5" />
-                  </Link>
-                </Button> */}
-              </motion.div>
-            </div>
-            
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+            >
+              <Button asChild variant="hero">
+                <Link to="/services">
+                  Explore Services
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </Button>
+              <Button asChild variant="heroOutline">
+                <Link to="/contact">Get a Quote</Link>
+              </Button>
+            </motion.div>
           </div>
         </div>
       </section>
