@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Call Us",
-    content: "+61 734 726 473",
+    // content: "+61 734 726 473",
     content2: "+61 470 419 330",
     subtitle: "Mon - Fri, 9AM - 6PM",
   },
