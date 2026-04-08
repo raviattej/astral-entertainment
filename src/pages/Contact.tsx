@@ -346,7 +346,7 @@ const Contact = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   For urgent matters, please call us directly at{" "}
                   <span className="text-gold">
-                    +61 7 3472 6473 / +61 470 419 330
+                    +61 470 419 330
                   </span>
                   .
                 </p>
