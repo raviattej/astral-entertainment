@@ -26,7 +26,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Call Us",
-    content: "+61 734 726 473",
+    // content: "+61 734 726 473",
     content2: "+61 470 419 330",
     subtitle: "Mon - Fri, 9AM - 6PM",
   },
@@ -346,7 +346,7 @@ const Contact = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   For urgent matters, please call us directly at{" "}
                   <span className="text-gold">
-                    +61 7 3472 6473 / +61 470 419 330
+                    +61 470 419 330
                   </span>
                   .
                 </p>

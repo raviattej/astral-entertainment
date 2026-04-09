@@ -95,12 +95,12 @@ const Footer = () => {
                   2/3 Page St Kunda Park QLD 4556
                 </span>
               </li>
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <Phone size={18} className="text-gold mt-1 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
                   +61 734 726 473
                 </span>
-              </li>
+              </li> */}
               <li className="flex items-start gap-3">
                 <Phone size={18} className="text-gold mt-1 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
