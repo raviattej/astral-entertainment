@@ -203,7 +203,7 @@ const Index = () => {
               </h2>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-6">
                 At Astral Entertainment, we believe in turning visions into
-                reality. With over 15 years of experience in Australia's events
+                reality. With over years of experience in Australia's events
                 and cleaning industry, we've established ourselves as the go-to
                 partner for those who demand nothing but the best.
               </p>
