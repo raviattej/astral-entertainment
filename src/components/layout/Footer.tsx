@@ -105,6 +105,8 @@ const Footer = () => {
                 <Phone size={18} className="text-gold mt-1 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm">
                   +61 470 419 330
+                  <br />
+                  +61 734 726 483
                 </span>
               </li>
               <li className="flex items-start gap-3">
